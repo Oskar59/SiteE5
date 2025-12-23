@@ -1,0 +1,254 @@
+/* --- 1. FONTS & VARIABLES --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap');
+
+:root {
+    /* --- PALETTE DE COULEURS (Light Mode) --- */
+    --bg-body: #f8fafc;        /* Slate 50 */
+    --bg-card: #ffffff;
+    --bg-subtle: #f1f5f9;      /* Slate 100 */
+    
+    --text-main: #475569;      /* Slate 600 */
+    --text-head: #0f172a;      /* Slate 900 */
+    
+    /* DGFIP Identity (Bleu Institutionnel Modernisé) */
+    --primary: #2563eb;        /* Blue 600 */
+    --primary-dark: #1e3a8a;   /* Blue 900 */
+    
+    /* GSB / Tech Accent (Teal/Emerald) */
+    --accent: #0d9488;         /* Teal 600 */
+    --accent-light: #ccfbf1;   /* Teal 100 */
+    
+    /* Borders & UI */
+    --border: #e2e8f0;
+    --radius: 16px;
+    
+    /* Ombres */
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+    
+    /* Fonts */
+    --font-head: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* GESTION DES DÉGRADÉS (Light Mode) */
+    --grad-hero-end: #eff6ff;       /* Bleu très pâle */
+    --grad-highlight-end: #f8fafc;  /* Gris très pâle */
+}
+
+/* --- DARK MODE --- */
+[data-theme="dark"] {
+    --bg-body: #020617;        /* Slate 950 */
+    --bg-card: #0f172a;        /* Slate 900 */
+    --bg-subtle: #1e293b;      /* Slate 800 */
+    
+    --text-main: #94a3b8;      /* Slate 400 */
+    --text-head: #f8fafc;      /* Slate 50 */
+    
+    --primary: #3b82f6;        /* Blue 500 */
+    --primary-dark: #60a5fa;   
+    
+    --accent: #2dd4bf;         /* Teal 400 */
+    --accent-light: rgba(45, 212, 191, 0.1);
+    
+    --border: #1e293b;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.5);
+    --shadow-md: 0 4px 6px rgba(0,0,0,0.4);
+
+    /* GESTION DES DÉGRADÉS (Dark Mode) */
+    --grad-hero-end: #1e293b;       /* Slate 800 (Subtil) */
+    --grad-highlight-end: #1e293b;  
+}
+
+/* --- 2. RESET & BASES --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { font-family: var(--font-head); color: var(--text-head); line-height: 1.2; }
+a { text-decoration: none; color: inherit; transition: all 0.2s ease; }
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.section-spacer { padding: 80px 0; }
+
+/* --- 3. NAVIGATION (Modern Pill Style) --- */
+.main-header {
+    position: fixed; top: 0; width: 100%; z-index: 1000;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 16px 40px;
+    transition: background 0.3s ease;
+}
+[data-theme="dark"] .main-header { background: rgba(15, 23, 42, 0.8); }
+
+.logo { font-size: 1.25rem; font-weight: 800; letter-spacing: -0.5px; color: var(--text-head); }
+.logo span { color: var(--primary); }
+
+.nav-links { 
+    display: flex; gap: 6px; 
+    background: var(--bg-subtle); padding: 6px; 
+    border-radius: 99px; border: 1px solid var(--border); 
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.nav-links a {
+    padding: 10px 20px; font-size: 0.9rem; font-weight: 500;
+    border-radius: 99px; color: var(--text-main);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid transparent;
+}
+
+.nav-links a:hover { 
+    color: var(--text-head); 
+    background: rgba(0,0,0,0.03);
+}
+
+.nav-links a.active { 
+    background: var(--bg-card); color: var(--primary);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-weight: 700; border-color: var(--border);
+}
+
+[data-theme="dark"] .nav-links a:hover { background: rgba(255,255,255,0.05); }
+[data-theme="dark"] .nav-links a.active { box-shadow: 0 2px 8px rgba(0,0,0,0.4); }
+
+.header-actions button {
+    background: transparent; border: 1px solid var(--border);
+    color: var(--text-head); width: 40px; height: 40px;
+    border-radius: 50%; cursor: pointer; transition: 0.2s;
+}
+.header-actions button:hover { background: var(--bg-subtle); border-color: var(--text-main); }
+.burger-menu { display: none; font-size: 1.5rem; color: var(--text-head); cursor: pointer; }
+
+/* --- 4. HERO SECTION (Index) --- */
+.hero { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 60px; min-height: 80vh; }
+.badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--accent-light); color: var(--accent);
+    padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; font-weight: 700;
+    margin-bottom: 24px; border: 1px solid rgba(13, 148, 136, 0.2);
+}
+.dot { width: 8px; height: 8px; background: currentColor; border-radius: 50%; animation: pulse 2s infinite; }
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 24px; letter-spacing: -1px; }
+.hero h1 span { color: var(--primary); }
+.hero p { font-size: 1.15rem; margin-bottom: 32px; max-width: 500px; }
+
+.btn {
+    display: inline-block; padding: 14px 28px; border-radius: 12px;
+    font-weight: 600; font-size: 1rem; cursor: pointer;
+}
+.btn-primary { background: var(--text-head); color: var(--bg-body); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); opacity: 0.9; }
+.btn-outline { border: 1px solid var(--border); color: var(--text-head); margin-left: 12px; }
+.btn-outline:hover { background: var(--bg-subtle); }
+
+/* --- 5. PROFILE CARD & IMAGE --- */
+.hero-visual { position: relative; }
+.profile-card {
+    background: var(--bg-card); padding: 30px; border-radius: 24px;
+    border: 1px solid var(--border); box-shadow: var(--shadow-lg);
+    text-align: center; transform: rotate(-3deg); transition: 0.3s;
+}
+.profile-card:hover { transform: rotate(0) scale(1.02); }
+
+.profile-img {
+    display: flex; justify-content: center; margin-bottom: 20px;
+}
+.profile-img img {
+    width: 150px; height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--bg-body);
+    box-shadow: var(--shadow-md);
+}
+
+/* --- 6. BENTO GRID SYSTEM --- */
+.bento-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto; gap: 24px;
+}
+.bento-card {
+    background: var(--bg-card); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 30px;
+    display: flex; flex-direction: column; justify-content: space-between;
+    transition: all 0.3s ease; position: relative; overflow: hidden;
+}
+.bento-card:hover { transform: translateY(-4px); border-color: var(--primary); box-shadow: var(--shadow-md); }
+
+.card-icon {
+    width: 48px; height: 48px; border-radius: 12px;
+    background: var(--bg-subtle); color: var(--text-head);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem; margin-bottom: 20px;
+}
+.accent-icon { background: var(--accent-light); color: var(--accent); }
+.primary-icon { background: #eff6ff; color: var(--primary); }
+[data-theme="dark"] .primary-icon { background: rgba(59, 130, 246, 0.15); }
+
+.col-span-2 { grid-column: span 2; }
+.col-span-3 { grid-column: span 3; }
+.row-span-2 { grid-row: span 2; }
+
+/* --- 7. UTILS DEGRADÉS (Fix Dark Mode) --- */
+.card-hero-gradient {
+    background: linear-gradient(to right, var(--bg-card), var(--grad-hero-end));
+    display: flex; flex-direction: row; align-items: center; gap: 40px;
+    margin-bottom: 40px;
+}
+.card-highlight-gradient {
+    background: linear-gradient(135deg, var(--bg-card), var(--grad-highlight-end));
+}
+
+/* --- 8. TIMELINE (E5) --- */
+.timeline-container {
+    position: relative; border-left: 2px solid var(--border);
+    margin-left: 20px; padding-left: 40px;
+}
+.timeline-item { position: relative; margin-bottom: 40px; }
+.timeline-marker {
+    position: absolute; left: -49px; top: 0;
+    width: 16px; height: 16px; background: var(--bg-body);
+    border: 3px solid var(--accent); border-radius: 50%;
+    z-index: 10;
+}
+.week-badge {
+    display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 8px; letter-spacing: 1px;
+}
+
+/* --- 9. FOOTER & EXTRAS --- */
+.ai-mention { font-size: 0.8rem; opacity: 0.7; margin-top: 5px; display: block; }
+.ai-mention i { color: var(--accent); margin-right: 5px; }
+
+/* --- 10. RESPONSIVE --- */
+@media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; text-align: center; padding-top: 100px; }
+    .hero p { margin: 0 auto 30px; }
+    .bento-grid { grid-template-columns: 1fr; }
+    .col-span-2, .col-span-3 { grid-column: span 1; }
+    
+    .nav-links { display: none; position: absolute; top: 70px; left: 0; width: 100%; background: var(--bg-card); flex-direction: column; padding: 20px; border-bottom: 1px solid var(--border); border-radius: 0; box-shadow: none; }
+    .nav-links.active { display: flex; }
+    .nav-links a { width: 100%; text-align: center; }
+    .burger-menu { display: block; }
+    
+    .card-hero-gradient { flex-direction: column-reverse; text-align: center; padding: 30px 20px; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
+}
