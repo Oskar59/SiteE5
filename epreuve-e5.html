@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets E5 | Oskar Doutreligne</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Doutreligne<span>.E5</span></div>
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="dgfip.html">L'Entreprise</a>
+            <a href="epreuve-e5.html" class="active">Projets E5</a>
+            <a href="veille.html">Veille</a>
+        </nav>
+        <div class="header-actions">
+            <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+            <div class="burger-menu"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main class="container section-spacer" style="padding-top: 120px;">
+        
+        <div style="text-align: center; margin-bottom: 60px;">
+            <span class="badge"><div class="dot"></div> BTS SIO OPTION SISR</span>
+            <h1>Portefeuille de Compétences</h1>
+            <p style="color: var(--text-main); font-size: 1.1rem; max-width: 600px; margin: 20px auto;">
+                Ce dossier s'appuie sur deux environnements techniques complémentaires : la réalité opérationnelle de la <strong>DGFIP</strong> et l'ingénierie réseau du projet <strong>GSB</strong>.
+            </p>
+        </div>
+
+        <section class="section-spacer" style="border-top: 1px solid var(--border);">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 40px;">
+                <div class="card-icon primary-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div>
+                    <h2>Contexte DGFIP</h2>
+                    <p style="color: var(--text-main);">Maintien en Condition Opérationnelle (MCO) & Support</p>
+                </div>
+            </div>
+
+            <div class="bento-grid">
+                <article class="bento-card col-span-2">
+                    <div class="card-icon primary-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>Support Utilisateur</h3>
+                    <p>Cœur de mon activité : Traitement des incidents N1/N2. Résolution à distance (Prise en main) ou intervention physique.</p>
+                    <ul style="font-size: 0.9rem; color: var(--text-main); margin-top: 15px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 8px;"></i>Préparation des postes (OS, Logiciels, Répertoires..)</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 8px;"></i>Mise en conformité</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 8px;"></i>Transfert de données</li>
+                        <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 8px;"></i>Accompagnement VPN</li>
+                    </ul>
+                    <div style="margin-top: auto; padding-top: 20px;">
+                        <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary);">PREUVES TECHNIQUES</span>
+                        <p style="font-size: 0.85rem; margin-bottom: 8px;">Conformité WMI, Transfert de profil, Support N1/N2.</p>
+                        
+                        <div class="proof-container">
+                            <button class="proof-badge" data-type="pdf" data-src="assets/ALT_Conformite_de_poste.pdf" data-title="Mise en conformité du poste">
+                                <i class="fa-solid fa-shield-check"></i> Conformité Poste
+                            </button>
+                            <button class="proof-badge" data-type="pdf" data-src="assets/ALT_Transfert_de_poste.pdf" data-title="Procédure de transfert de poste">
+                                <i class="fa-solid fa-file-export"></i> Transfert Poste
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bento-card">
+                    <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+                    <h3>Gestion de Parc</h3>
+                    <p style="margin: 15px 0;">Administration quotidienne via <strong>SIGMA (GLPI)</strong>. Gestion du cycle de vie des postes.</p>
+                    <div style="margin-top: auto; padding-top: 20px;">
+                        <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary);">TÂCHES RÉALISÉES</span>
+                        <p style="font-size: 0.85rem; margin-bottom: 8px;">Inventaire, Attribution, Suivi.</p>
+                        <div class="proof-container">
+                            <button class="proof-badge" data-type="pdf" data-src="assets/ALT_Gestion-accelere-SIGMA.pdf" data-title="Gestion accélérée de l'inventaire SIGMA">
+                                <i class="fa-solid fa-bolt"></i> Gestion SIGMA
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bento-card col-span-3 card-highlight-gradient">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
+                        <div style="flex: 1;">
+                            <div class="card-icon"><i class="fa-solid fa-building"></i></div>
+                            <h3>Installation de nouveaux sites</h3>
+                            <ul style="font-size: 0.9rem; color: var(--text-main); margin-top: 15px; display: flex; flex-direction: column; gap: 8px;">
+                                <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 8px;"></i><strong>Réseau local (LAN) :</strong> Brassage, configuration de commutateurs, diagnostic pannes</li>
+                                <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 8px;"></i><strong>Documentation :</strong> Pour utilisateurs et techniciens</li>
+                                <li><i class="fa-solid fa-check" style="color: var(--primary); margin-right: 8px;"></i><strong>Téléphonie :</strong> Installation de la ToIP</li>
+                            </ul>
+                        </div>
+                        <div style="width: 200px; flex-shrink: 0;">
+                            <img src="assets/dgfip-site.jpg" alt="Installation Site DGFIP" style="border-radius: 8px; width: 100%; box-shadow: var(--shadow-md);">
+                        </div>
+                    </div>
+                    <div style="margin-top: 20px;">
+                        <span style="font-size: 0.8rem; font-weight: 700; color: var(--primary);">TÂCHES RÉALISÉES</span>
+                        <p style="font-size: 0.85rem;">Brassage réseau, Diagnostic de pannes, Installation ToIP.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-spacer" style="border-top: 1px solid var(--border);">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 40px;">
+                <div class="card-icon accent-icon"><i class="fa-solid fa-network-wired"></i></div>
+                <div>
+                    <h2>Projet GSB - Infrastructure</h2>
+                    <p style="color: var(--text-main);">Projet fil rouge de l'année - Déploiement progressif d'une infrastructure réseau complète</p>
+                </div>
+            </div>
+
+            <!-- Vue d'ensemble du projet -->
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 60px;">
+                <div class="project-milestone">
+                    <div class="milestone-number">1</div>
+                    <h4>Segmentation</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-main);">Architecture réseau</p>
+                </div>
+                <div class="project-milestone">
+                    <div class="milestone-number">2</div>
+                    <h4>Infrastructure</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-main);">Couche virtuelle</p>
+                </div>
+                <div class="project-milestone">
+                    <div class="milestone-number">3</div>
+                    <h4>Utilisateurs</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-main);">Gestion & accès</p>
+                </div>
+                <div class="project-milestone">
+                    <div class="milestone-number">4</div>
+                    <h4>Sécurité</h4>
+                    <p style="font-size: 0.85rem; color: var(--text-main);">Périmètres & filtrage</p>
+                </div>
+            </div>
+
+            <!-- Contexte et périmètre -->
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px; margin-bottom: 60px;">
+                <div>
+                    <h3 style="margin-bottom: 16px;">Contexte du Projet</h3>
+                    <p style="color: var(--text-main); line-height: 1.8; margin-bottom: 16px;">
+                        GSB (Gestionnaire de Santé Breton) est une entreprise pharmaceutique nécessitant une infrastructure réseau sécurisée et scalable. Mon rôle consiste à concevoir et déployer l'architecture réseau, de la segmentation initiale jusqu'aux services en production.
+                    </p>
+                    <p style="color: var(--text-main); line-height: 1.8;">
+                        <strong>Périmètre technique :</strong> Réseau & Sécurité (Open vSwitch, OPNSense, VLANs, DMZ). L'administration Active Directory est déléguée à un collègue.
+                    </p>
+                </div>
+                <div class="bento-card">
+                    <h4 style="margin-bottom: 12px;">Fondamentaux</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="background: var(--bg-subtle); padding: 6px 12px; border-radius: 5px; font-size: 0.8rem; font-weight: 600;">172.22.128.0/20</span>
+                        <span style="background: var(--bg-subtle); padding: 6px 12px; border-radius: 5px; font-size: 0.8rem; font-weight: 600;">VLAN 180-183</span>
+                        <span style="background: var(--bg-subtle); padding: 6px 12px; border-radius: 5px; font-size: 0.8rem; font-weight: 600;">Open vSwitch</span>
+                        <span style="background: var(--bg-subtle); padding: 6px 12px; border-radius: 5px; font-size: 0.8rem; font-weight: 600;">OPNSense</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation par onglets -->
+            <div>
+                <h3 style="margin-bottom: 30px;">Détails des Missions</h3>
+                
+                <div class="missions-tabs-wrapper">
+                    <!-- Tab buttons -->
+                    <div class="missions-tabs-buttons">
+                        <button class="mission-tab-btn active" data-mission="1">
+                            <span class="tab-number">1</span>
+                            <span class="tab-title">Segmentation</span>
+                        </button>
+                        <button class="mission-tab-btn" data-mission="2">
+                            <span class="tab-number">2</span>
+                            <span class="tab-title">Infrastructure</span>
+                        </button>
+                        <button class="mission-tab-btn" data-mission="3">
+                            <span class="tab-number">3</span>
+                            <span class="tab-title">Utilisateurs</span>
+                        </button>
+                        <button class="mission-tab-btn" data-mission="4">
+                            <span class="tab-number">4</span>
+                            <span class="tab-title">Sécurité</span>
+                        </button>
+                        <button class="mission-tab-btn" data-mission="5">
+                            <span class="tab-number">5</span>
+                            <span class="tab-title">DMZ & Web</span>
+                        </button>
+                    </div>
+
+                    <!-- Tab contents -->
+                    <div class="missions-tabs-content">
+                        
+                        <!-- Mission 1 -->
+                        <div class="mission-tab-content active" data-mission="1">
+                            <div class="mission-card-full">
+                                <div class="mission-card-header">
+                                    <h3 style="margin: 0; color: var(--text-head);">Segmentation Réseau</h3>
+                                    <p style="margin: 8px 0 0 0; color: var(--text-main); font-size: 0.9rem;">Architecture logique et plan d'adressage IP</p>
+                                </div>
+                                <div class="mission-card-body">
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Objectifs</h4>
+                                        <ul>
+                                            <li>Définition du plan d'adressage IP sur le réseau <strong>172.22.128.0/20</strong></li>
+                                            <li>Création des VLANs spécifiques : Employés (180), IT (181), Serveurs (182), DMZ (183)</li>
+                                            <li>Isolation des domaines de diffusion et domaines de collision</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Technologies</h4>
+                                        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">CIDR /20</span>
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">VLANs</span>
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">Réseau</span>
+                                        </div>
+                                    </div>
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Preuves</h4>
+                                        <div style="display: flex; gap: 10px;">
+                                            <button class="proof-badge" data-type="image" data-src="assets/segmentation-reseau.png" data-title="Tableau de Segmentation">
+                                                <i class="fa-solid fa-table"></i> Vue architecture
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mission 2 -->
+                        <div class="mission-tab-content" data-mission="2">
+                            <div class="mission-card-full">
+                                <div class="mission-card-header">
+                                    <h3 style="margin: 0; color: var(--text-head);">Infrastructure de Base</h3>
+                                    <p style="margin: 8px 0 0 0; color: var(--text-main); font-size: 0.9rem;">Couche virtuelle et connectivité</p>
+                                </div>
+                                <div class="mission-card-body">
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Objectifs</h4>
+                                        <ul>
+                                            <li>Installation et configuration d'<strong>Open vSwitch</strong> sur les serveurs Linux</li>
+                                            <li>Création des ponts (bridges) et ports via <code>ovs-vsctl</code></li>
+                                            <li>Mise en place de tunnels GRE pour l'interconnexion des commutateurs virtuels</li>
+                                            <li>Déploiement initial d'Active Directory et DHCP</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Technologies</h4>
+                                        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">Open vSwitch</span>
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">GRE Tunnels</span>
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">Linux</span>
+                                        </div>
+                                    </div>
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Preuves</h4>
+                                        <div style="display: flex; gap: 10px;">
+                                            <button class="proof-badge" data-type="pdf" data-src="assets/infrastructure-base.pdf" data-title="Cahier des charges">
+                                                <i class="fa-solid fa-file-pdf"></i> Cahier des charges
+                                            </button>
+                                            <button class="proof-badge" data-type="image" data-src="assets/open-vswitch.png" data-title="Config OVS">
+                                                <i class="fa-solid fa-terminal"></i> Config OVS
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mission 3 -->
+                        <div class="mission-tab-content" data-mission="3">
+                            <div class="mission-card-full">
+                                <div class="mission-card-header">
+                                    <h3 style="margin: 0; color: var(--text-head);">Utilisateurs & Données</h3>
+                                    <p style="margin: 8px 0 0 0; color: var(--text-main); font-size: 0.9rem;">Gestion des identités et stockage sécurisé</p>
+                                </div>
+                                <div class="mission-card-body">
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Objectifs</h4>
+                                        <ul>
+                                            <li>Script d'importation massive des utilisateurs (CSV vers AD)</li>
+                                            <li>Configuration du serveur de fichiers avec tolérance de panne (<strong>RAID 1</strong>)</li>
+                                            <li>Gestion fine des droits (ACL) par service : Pharmacie, Production, Commercial</li>
+                                            <li>Mise en place des quotas et lecteurs réseaux</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Technologies</h4>
+                                        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">Active Directory</span>
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">RAID 1</span>
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">ACL</span>
+                                        </div>
+                                    </div>
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Preuves</h4>
+                                        <div style="display: flex; gap: 10px;">
+                                            <button class="proof-badge" data-type="pdf" data-src="assets/utilisateurs-donnees.pdf" data-title="Gestion utilisateurs">
+                                                <i class="fa-solid fa-users"></i> Doc utilisateurs
+                                            </button>
+                                            <button class="proof-badge" data-type="image" data-src="assets/liste-utilisateurs.png" data-title="Liste AD">
+                                                <i class="fa-solid fa-list"></i> Liste AD
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mission 4 -->
+                        <div class="mission-tab-content" data-mission="4">
+                            <div class="mission-card-full">
+                                <div class="mission-card-header">
+                                    <h3 style="margin: 0; color: var(--text-head);">Périmètres Réseaux</h3>
+                                    <p style="margin: 8px 0 0 0; color: var(--text-main); font-size: 0.9rem;">Sécurité des zones et filtrage du trafic</p>
+                                </div>
+                                <div class="mission-card-body">
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Objectifs</h4>
+                                        <ul>
+                                            <li>Remplacement du routeur temporaire par des pare-feux <strong>OPNSense</strong></li>
+                                            <li>Définition des zones de sécurité : Interne, Externe et DMZ</li>
+                                            <li>Application des règles de filtrage strictes (ex: Interdiction DMZ vers Interne)</li>
+                                            <li>Configuration du NAT pour l'accès Internet depuis le LAN</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Technologies</h4>
+                                        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">OPNSense</span>
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">Filtrage</span>
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">NAT</span>
+                                        </div>
+                                    </div>
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Preuves</h4>
+                                        <div style="display: flex; gap: 10px;">
+                                            <button class="proof-badge" data-type="pdf" data-src="assets/perimetres-reseaux.pdf" data-title="Périmètres réseaux">
+                                                <i class="fa-solid fa-shield-halved"></i> Périmètres
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mission 5 -->
+                        <div class="mission-tab-content" data-mission="5">
+                            <div class="mission-card-full">
+                                <div class="mission-card-header">
+                                    <h3 style="margin: 0; color: var(--text-head);">Zone DMZ & Services Web</h3>
+                                    <p style="margin: 8px 0 0 0; color: var(--text-main); font-size: 0.9rem;">Publication des services vers Internet</p>
+                                </div>
+                                <div class="mission-card-body">
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Objectifs</h4>
+                                        <ul>
+                                            <li>Déploiement du serveur Web en zone DMZ et Base de données en zone Interne</li>
+                                            <li>Configuration DNS "Split-Horizon" : résolution interne vs externe pour <code>www.region.gsb.sio</code></li>
+                                            <li>Mise en place du Port Forwarding (NAT) pour l'accès public au site Web</li>
+                                            <li>Finalisation et documentation de l'infrastructure</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Technologies</h4>
+                                        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">DNS Split</span>
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">Port Forward</span>
+                                            <span style="background: var(--primary-light); color: var(--primary); padding: 8px 14px; border-radius: 6px; font-weight: 600; font-size: 0.85rem;">Web/DB</span>
+                                        </div>
+                                    </div>
+                                    <div class="mission-section">
+                                        <h4 style="color: var(--primary); margin-bottom: 12px;">Preuves</h4>
+                                        <div style="display: flex; gap: 10px;">
+                                            <button class="proof-badge" data-type="pdf" data-src="assets/dmz.pdf" data-title="Configuration DMZ">
+                                                <i class="fa-solid fa-globe"></i> DMZ
+                                            </button>
+                                            <button class="proof-badge" data-type="pdf" data-src="assets/utilisation-proxmox.pdf" data-title="Proxmox">
+                                                <i class="fa-solid fa-server"></i> Proxmox
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-spacer" style="border-top: 1px solid var(--border);">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 40px;">
+                <div class="card-icon"><i class="fa-solid fa-file-lines"></i></div>
+                <div>
+                    <h2>Ma veille informatique</h2>
+                    <p style="color: var(--text-main);">Sujets suivis : Cybersécurité et Administration Réseau</p>
+                </div>
+            </div>
+
+            <div class="bento-grid">
+                <div class="bento-card col-span-3">
+                    <p style="margin-bottom: 20px;">J'ai choisi de porter ma veille sur les dernières tendances en cybersécurité et administration réseau. J'utilise principalement :</p>
+                    <ul style="font-size: 0.95rem; color: var(--text-main); list-style: none; display: flex; flex-direction: column; gap: 15px;">
+                        <li style="display: flex; align-items: center;">
+                            <i class="fa-brands fa-youtube" style="color: #ef4444; margin-right: 12px; font-size: 1.2rem;"></i>
+                            <span>Des podcasts et vidéos spécialisés (Ex : <a href="https://www.youtube.com/@Underscore_" target="_blank" style="color: var(--primary); font-weight: 600; text-decoration: underline;">Underscore_</a>)</span>
+                        </li>
+                        <li style="display: flex; align-items: center;">
+                            <i class="fa-brands fa-reddit-alien" style="color: #f97316; margin-right: 12px; font-size: 1.2rem;"></i>
+                            <span>Des forums techniques (Ex : Reddit r/sysadmin, r/netsec)</span>
+                        </li>
+                        <li style="display: flex; align-items: center;">
+                            <i class="fa-solid fa-rss" style="color: #f59e0b; margin-right: 12px; font-size: 1.2rem;"></i>
+                            <span>Des agrégateurs de flux (Ex : Feedly)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+         </section>
+
+    </main>
+    
+    <footer>
+        <div class="footer-content" style="text-align: center; padding: 40px 0; border-top: 1px solid var(--border); margin-top: 40px;">
+            <p>&copy; 2025 Doutreligne Oskar - BTS SIO</p>
+            <div class="socials" style="margin-top: 15px; font-size: 1.2rem; display: flex; justify-content: center; gap: 20px;">
+                <a href="https://www.linkedin.com/in/oskar-doutreligne-08216b2b4/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Oskar59" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="proof-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="Preuve" style="display: none;">
+                <iframe id="modal-pdf" src="" style="display: none;" frameborder="0"></iframe>
+            </div>
+            <div id="modal-caption" class="modal-caption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
