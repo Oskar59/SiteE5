@@ -1,0 +1,657 @@
+﻿﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets E5 | Oskar Doutreligne</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            Oskar Doutreligne
+            <span class="logo-sub">BTS SIO · SISR</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="dgfip.html">L'Entreprise</a>
+            <a href="epreuve-e5.html" class="active">Projets E5</a>
+        </nav>
+        <div class="header-actions">
+            <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+            <div class="burger-menu"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="page-hero">
+            <div class="badge"><div class="dot"></div> BTS SIO · Option SISR</div>
+            <h1>Portefeuille<br>de <em>Compétences</em></h1>
+            <p>Deux environnements techniques complémentaires : la réalité opérationnelle de la <strong>DGFIP</strong> et l'ingénierie réseau du projet <strong>GSB</strong>. Complété par des réalisations personnelles en cybersécurité.</p>
+        </div>
+
+        <!-- ═══════════════════════════════════════════════
+             1 · DGFIP
+        ════════════════════════════════════════════════ -->
+        <div class="section-title-row">
+            <div class="card-icon primary-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <div>
+                <h2>Contexte <em style="color:var(--blue);">DGFIP</em></h2>
+                <p>MCO, support utilisateurs, infrastructure réseau &amp; automatisation</p>
+            </div>
+        </div>
+
+        <div class="dgfip-list">
+
+            <!-- 1. Support & incidents -->
+            <div class="dgfip-item">
+                <div class="dgfip-header" onclick="toggleDgfip(this)">
+                    <div class="dgfip-header-left">
+                        <div class="card-icon primary-icon" style="flex-shrink:0;"><i class="fa-solid fa-headset"></i></div>
+                        <div>
+                            <div class="dgfip-title">Support Utilisateur &amp; Gestion d'incidents</div>
+                            <div class="dgfip-subtitle">Traitement N1/N2 — résolution à distance ou intervention physique</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-down dgfip-chevron"></i>
+                </div>
+                <div class="dgfip-body">
+                    <div class="dgfip-body-inner">
+                        <div class="dgfip-col">
+                            <p class="intro">Collecte, suivi et orientation des demandes via l'outil propriétaire OmégAssist. Interventions à distance (prise en main) ou sur site selon la criticité de l'incident.</p>
+                            <div class="dgfip-sub-label">Tâches réalisées</div>
+                            <ul class="dgfip-ul">
+                                <li><i class="fa-solid fa-minus"></i> Préparation &amp; déploiement des postes (soclage sécurisé)</li>
+                                <li><i class="fa-solid fa-minus"></i> Mise en conformité &amp; transfert de données/profils</li>
+                                <li><i class="fa-solid fa-minus"></i> Accompagnement VPN &amp; télétravail</li>
+                                <li><i class="fa-solid fa-minus"></i> Formation individuelle des utilisateurs</li>
+                                <li><i class="fa-solid fa-minus"></i> Suivi &amp; résolution des tickets dans les délais</li>
+                            </ul>
+                            <div style="padding-top:12px; border-top:1px solid var(--border);">
+                                <div class="dgfip-sub-label">Preuves</div>
+                                <div class="proof-container">
+                                    <button class="proof-badge" data-type="image" data-src="assets/OmegAssist.png" data-title="OmégAssist — Tickets CID 59" data-desc="Interface OmégAssist avec mes tickets du groupe CID_59 — incidents de type STATION D'ACCUEIL et DÉMARRAGE que je traite au quotidien.">
+                                        <i class="fa-solid fa-shield-check"></i> OmégAssist
+                                    </button>
+                                    <button class="proof-badge" data-type="image" data-src="assets/Transferposte.png" data-title="Procédure de transfert de poste" data-desc="Schéma Draw.io de ma procédure de transfert de poste : sauvegarde des données, réinstallation, restauration et validation finale.">
+                                        <i class="fa-solid fa-file-export"></i> Transfert Poste
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dgfip-col">
+                            <div class="dgfip-sub-label">Gestion de Parc &amp; Inventaire</div>
+                            <p style="font-size:0.875rem; color:var(--ink-soft); line-height:1.7; margin-bottom:12px;">Administration via <strong>SIGMA (GLPI)</strong>. Recensement physique des équipements sur l'ensemble du département du Nord, gestion du cycle de vie des postes et vérification régulière des niveaux d'habilitation.</p>
+                            <div class="proof-container">
+                                <button class="proof-badge" data-type="image" data-src="assets/Sigma.png" data-title="SIGMA — Gestion de parc DGFIP" data-desc="Vue globale du parc dans SIGMA (GLPI) — 61 489 éléments que je gère : ordinateurs, moniteurs, périphériques, imprimantes, téléphones.">
+                                    <i class="fa-solid fa-bolt"></i> SIGMA / GLPI
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Installation de sites -->
+            <div class="dgfip-item">
+                <div class="dgfip-header" onclick="toggleDgfip(this)">
+                    <div class="dgfip-header-left">
+                        <div class="card-icon primary-icon" style="flex-shrink:0;"><i class="fa-solid fa-building"></i></div>
+                        <div>
+                            <div class="dgfip-title">Installation de nouveaux sites</div>
+                            <div class="dgfip-subtitle">LAN, ToIP et gestion de projet opérationnelle</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-down dgfip-chevron"></i>
+                </div>
+                <div class="dgfip-body">
+                    <div class="dgfip-body-inner thirds">
+                        <div class="dgfip-col">
+                            <p class="intro">Déploiement complet de nouveaux sites DGFIP : infrastructure réseau physique, téléphonie IP et coordination du projet avec les équipes locales.</p>
+                            <ul class="dgfip-ul">
+                                <li><i class="fa-solid fa-minus"></i><span><strong style="color:var(--ink-mid);">Réseau local (LAN) :</strong> Brassage, configuration des commutateurs, diagnostic de pannes</span></li>
+                                <li><i class="fa-solid fa-minus"></i><span><strong style="color:var(--ink-mid);">Téléphonie IP :</strong> Installation et configuration de la ToIP</span></li>
+                                <li><i class="fa-solid fa-minus"></i><span><strong style="color:var(--ink-mid);">Planification :</strong> Jalons, suivi des indicateurs, analyse des écarts entre prévu et réel</span></li>
+                            </ul>
+                            <div style="padding-top:12px; margin-top:4px; border-top:1px solid var(--border);">
+                                <div class="dgfip-sub-label">Preuves</div>
+                                <div class="proof-container">
+                                    <button class="proof-badge" data-type="image" data-src="assets/brassage.JPG" data-title="Brassage réseau — Salle serveur" data-desc="Photo prise lors d'une de mes installations de site — je cable la baie de brassage.">
+                                        <i class="fa-solid fa-ethernet"></i> Brassage LAN
+                                    </button>
+                                    <button class="proof-badge" data-type="image" data-src="assets/planning.png" data-title="Planning hebdomadaire — Interventions site" data-desc="Mon planning sur la semaine : interventions matinales à Lomme et déploiements après-midi à Fives — écrans + téléphones ToIP + déménagements.">
+                                        <i class="fa-solid fa-calendar-check"></i> Planning
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display:flex; align-items:center; justify-content:center;">
+                            <img src="assets/dgfip-site.jpg" alt="Installation Site DGFIP" style="border-radius:var(--r-md); width:100%; max-width:220px; box-shadow:var(--sh-md);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Infra réseau + migration -->
+            <div class="dgfip-item">
+                <div class="dgfip-header" onclick="toggleDgfip(this)">
+                    <div class="dgfip-header-left">
+                        <div class="card-icon accent-icon" style="flex-shrink:0;"><i class="fa-solid fa-network-wired"></i></div>
+                        <div>
+                            <div class="dgfip-title">Infrastructure Réseau &amp; Migration Parc</div>
+                            <div class="dgfip-subtitle">Switch HPE · Migration Windows 10 → 11</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-down dgfip-chevron"></i>
+                </div>
+                <div class="dgfip-body">
+                    <div class="dgfip-body-inner">
+                        <div class="dgfip-col">
+                            <div class="dgfip-sub-label">Configuration Switch HPE</div>
+                            <ul class="dgfip-ul">
+                                <li><i class="fa-solid fa-minus"></i> Paramétrage et configuration du Switch HPE</li>
+                                <li><i class="fa-solid fa-minus"></i> Vérification de la connectivité réseau</li>
+                                <li><i class="fa-solid fa-minus"></i> Diagnostic et résolution de pannes LAN</li>
+                            </ul>
+                        </div>
+                        <div class="dgfip-col">
+                            <div class="dgfip-sub-label">Migration Windows 10 → 11</div>
+                            <ul class="dgfip-ul">
+                                <li><i class="fa-solid fa-minus"></i> Mise à niveau complète du parc informatique</li>
+                                <li><i class="fa-solid fa-minus"></i> Vérification de la compatibilité matérielle</li>
+                                <li><i class="fa-solid fa-minus"></i> Maintien de la continuité de service pendant la migration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="padding-top:12px; margin-top:4px; border-top:1px solid var(--border); display:flex; flex-wrap:wrap; gap:7px;">
+                        <span class="tech-tag">Switch HPE</span>
+                        <span class="tech-tag">Windows 11</span>
+                        <span class="tech-tag">VLAN</span>
+                    </div>
+                    <div style="padding-top:12px; margin-top:12px; border-top:1px solid var(--border);">
+                        <div class="dgfip-sub-label">Preuves</div>
+                        <div class="proof-container">
+                            <button class="proof-badge" data-type="pdf" data-src="assets/Switch.pdf" data-title="Configuration Switch HPE 5140 POE" data-desc="Ma documentation de configuration du switch HPE 5140 POE : modes opératoires, VLANs trunk/access/PVID, SSH, SNMP que j'ai rédigée lors de l'installation.">
+                                <i class="fa-solid fa-network-wired"></i> Switch HPE
+                            </button>
+                            <button class="proof-badge" data-type="image" data-src="assets/Windows11.png" data-title="Poste migré Windows 11 Professionnel" data-desc="Capture d'un poste que j'ai migré vers Windows 11 Professionnel (version 25H2, i5-13500T, 16 Go RAM). Nom de l'appareil flouté.">
+                                <i class="fa-brands fa-windows"></i> Migration Win11
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Script PowerShell -->
+            <div class="dgfip-item">
+                <div class="dgfip-header" onclick="toggleDgfip(this)">
+                    <div class="dgfip-header-left">
+                        <div class="card-icon" style="background:#fef3c7; color:#92400e; border-color:#fde68a; flex-shrink:0;"><i class="fa-solid fa-terminal"></i></div>
+                        <div>
+                            <div class="dgfip-title">Script PowerShell — Automatisation</div>
+                            <div class="dgfip-subtitle">Initiative personnelle · Changement de poste automatisé</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-down dgfip-chevron"></i>
+                </div>
+                <div class="dgfip-body">
+                    <div class="dgfip-body-inner thirds">
+                        <div class="dgfip-col">
+                            <p class="intro">Développement d'un script d'automatisation du changement de poste pour éviter les oublis lors des migrations. Il réalise une sauvegarde complète puis réimporte tout sur le nouveau poste en un clic.</p>
+                            <div class="dgfip-sub-label">Données sauvegardées</div>
+                            <ul class="dgfip-ul">
+                                <li><i class="fa-solid fa-minus"></i> Dossiers utilisateur, mails, favoris</li>
+                                <li><i class="fa-solid fa-minus"></i> Profils Edge &amp; Firefox (extensions, mots de passe)</li>
+                                <li><i class="fa-solid fa-minus"></i> Mots de passe Wi-Fi &amp; imprimantes réseau</li>
+                            </ul>
+                        </div>
+                        <div class="dgfip-col">
+                            <div class="dgfip-sub-label">Preuves</div>
+                            <div class="proof-container" style="flex-direction:column;">
+                                <a class="proof-badge" href="assets/ScriptBACKUP.ps1" download="ScriptBACKUP.ps1">
+                                    <i class="fa-solid fa-file-code"></i> ScriptBACKUP.ps1
+                                </a>
+                                <button class="proof-badge" data-type="pdf" data-src="assets/ScriptBACKUP.pdf" data-title="Script PowerShell — Code source" data-desc="Code source complet de mon script de migration PowerShell : sauvegarde et restauration des données, profils, Wi-Fi et imprimantes.">
+                                    <i class="fa-solid fa-file-pdf"></i> Script (PDF)
+                                </button>
+                                <button class="proof-badge" data-type="image" data-src="assets/ResultatScriptBACKUP.png" data-title="Exécution du script" data-desc="Résultat de l'exécution de mon script en mode administrateur — le menu me propose la sauvegarde ou la restauration.">
+                                    <i class="fa-solid fa-terminal"></i> Résultat exécution
+                                </button>
+                            </div>
+                            <div style="margin-top:14px; display:flex; flex-wrap:wrap; gap:7px;">
+                                <span class="tech-tag">PowerShell</span>
+                                <span class="tech-tag">Automatisation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Maintenance + doc + continuité -->
+            <div class="dgfip-item">
+                <div class="dgfip-header" onclick="toggleDgfip(this)">
+                    <div class="dgfip-header-left">
+                        <div class="card-icon accent-icon" style="flex-shrink:0;"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <div>
+                            <div class="dgfip-title">Maintenance, Documentation &amp; Continuité</div>
+                            <div class="dgfip-subtitle">MCO du parc · Procédures · Habilitations &amp; sauvegardes</div>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-down dgfip-chevron"></i>
+                </div>
+                <div class="dgfip-body">
+                    <div class="dgfip-body-inner" style="grid-template-columns:1fr 1fr 1fr;">
+                        <div class="dgfip-col">
+                            <div class="dgfip-sub-label">Maintenance du parc</div>
+                            <ul class="dgfip-ul">
+                                <li><i class="fa-solid fa-minus"></i> Maintenance préventive &amp; corrective</li>
+                                <li><i class="fa-solid fa-minus"></i> Vérification des règles d'utilisation</li>
+                                <li><i class="fa-solid fa-minus"></i> Gestion et vérification des sauvegardes</li>
+                            </ul>
+                        </div>
+                        <div class="dgfip-col">
+                            <div class="dgfip-sub-label">Création de documentation</div>
+                            <ul class="dgfip-ul">
+                                <li><i class="fa-solid fa-minus"></i> Procédures utilisateurs</li>
+                                <li><i class="fa-solid fa-minus"></i> Documentation techniciens</li>
+                                <li><i class="fa-solid fa-minus"></i> Fiches d'intervention</li>
+                            </ul>
+                        </div>
+                        <div class="dgfip-col">
+                            <div class="dgfip-sub-label">Continuité de Service</div>
+                            <ul class="dgfip-ul">
+                                <li><i class="fa-solid fa-minus"></i> Habilitations &amp; niveaux d'accès</li>
+                                <li><i class="fa-solid fa-minus"></i> Suivi du parc via OCS Inventory</li>
+                                <li><i class="fa-solid fa-minus"></i> Contrôle des sauvegardes avant migration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="padding-top:12px; margin-top:4px; border-top:1px solid var(--border);">
+                        <div class="dgfip-sub-label">Preuves</div>
+                        <div class="proof-container">
+                            <button class="proof-badge" data-type="pdf" data-src="assets/doc-procedure.pdf" data-title="Procédure technicien" data-desc="Documentation technique que j'ai rédigée pour les techniciens du CID 59.">
+                                <i class="fa-solid fa-file-lines"></i> Procédure technicien
+                            </button>
+                            <button class="proof-badge" data-type="image" data-src="assets/OCSinventory.png" data-title="OCS Inventory" data-desc="Interface OCS Inventory que j'utilise pour suivre le parc — 3963 machines recensées, majoritairement sous Windows 11 Professionnel.">
+                                <i class="fa-solid fa-circle-check"></i> OCS Inventory
+                            </button>
+                            <button class="proof-badge" data-type="image" data-src="assets/gestionAD.png" data-title="BaoS AD — Gestion Active Directory" data-desc="Interface BaoS AD que j'utilise pour vérifier les habilitations — 112 607 comptes dont 96 574 actifs, 141 910 machines sur le domaine ad.infra.dgfip. Domaine ad.infra.dgfip opérationnel.">
+                                <i class="fa-solid fa-users-gear"></i> BaoS AD
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="divider">
+
+        <!-- ═══════════════════════════════════════════════
+             3 · PROJET GSB
+        ════════════════════════════════════════════════ -->
+        <div class="section-title-row">
+            <div class="card-icon accent-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <div>
+                <h2>Projet <em style="color:var(--blue);">GSB</em> — Infrastructure</h2>
+                <p>Déploiement d'une infrastructure réseau complète en 8 semaines</p>
+            </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin-bottom:44px;">
+            <div class="project-milestone"><div class="milestone-number">1</div><h4>Segmentation</h4><p style="font-size:0.78rem; color:var(--ink-soft); margin-top:3px;">Architecture réseau</p></div>
+            <div class="project-milestone"><div class="milestone-number">2</div><h4>Infrastructure</h4><p style="font-size:0.78rem; color:var(--ink-soft); margin-top:3px;">Couche virtuelle</p></div>
+            <div class="project-milestone"><div class="milestone-number">3</div><h4>Utilisateurs</h4><p style="font-size:0.78rem; color:var(--ink-soft); margin-top:3px;">Gestion &amp; accès</p></div>
+            <div class="project-milestone"><div class="milestone-number">4</div><h4>Sécurité</h4><p style="font-size:0.78rem; color:var(--ink-soft); margin-top:3px;">Périmètres &amp; filtrage</p></div>
+            <div class="project-milestone"><div class="milestone-number">5</div><h4>DMZ &amp; Web</h4><p style="font-size:0.78rem; color:var(--ink-soft); margin-top:3px;">Publication services</p></div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:2fr 1fr; gap:28px; margin-bottom:36px;">
+            <div>
+                <h3 style="font-size:1.3rem; margin-bottom:14px;">Contexte du Projet</h3>
+                <p style="color:var(--ink-soft); line-height:1.85; margin-bottom:13px;">GSB est une entreprise pharmaceutique fictive nécessitant une infrastructure réseau sécurisée et scalable. Mon rôle : concevoir et déployer l'architecture réseau complète, de la segmentation initiale jusqu'à la mise en production des services, <strong style="color:var(--ink-mid);">sur une contrainte de 8 semaines</strong>.</p>
+                <p style="color:var(--ink-soft); line-height:1.85; margin-bottom:22px;"><strong style="color:var(--ink-mid);">Périmètre :</strong> Réseau &amp; Sécurité (Open vSwitch, OPNSense, VLANs, DMZ). L'administration Active Directory a été déléguée à un collègue dans le cadre d'un travail en binôme.</p>
+                <button class="proof-badge" style="background:var(--ink); color:var(--canvas); border:none; padding:12px 22px; font-size:0.875rem; box-shadow:var(--sh-sm);"
+                    data-type="image" data-src="assets/reseau.png" data-title="Topologie Réseau GSB" data-desc="Schéma global de l'infrastructure GSB que j'ai conçue — segmentation des VLANs, architecture DMZ et positionnement des pare-feux.">
+                    <i class="fa-solid fa-diagram-project" style="color:var(--canvas);"></i> Afficher l'Architecture Globale
+                </button>
+            </div>
+            <div class="bento-card" style="border:1px solid var(--border);">
+                <h4 style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--blue); margin-bottom:12px;">Stack technique</h4>
+                <div style="display:flex; flex-wrap:wrap; gap:7px;">
+                    <span class="tech-tag">172.22.128.0/20</span>
+                    <span class="tech-tag">VLAN 180–183</span>
+                    <span class="tech-tag">Open vSwitch</span>
+                    <span class="tech-tag">OPNSense</span>
+                    <span class="tech-tag">Proxmox VE</span>
+                    <span class="tech-tag">Active Directory</span>
+
+                </div>
+            </div>
+        </div>
+
+        <h3 style="font-size:1.35rem; margin-bottom:22px;">Missions GSB — Déroulement semaine par semaine</h3>
+
+        <div class="missions-tabs-wrapper">
+            <div class="missions-tabs-buttons">
+                <button class="mission-tab-btn active" data-mission="1"><span class="tab-number">1</span><span class="tab-title">Segmentation</span></button>
+                <button class="mission-tab-btn" data-mission="2"><span class="tab-number">2</span><span class="tab-title">Infrastructure</span></button>
+                <button class="mission-tab-btn" data-mission="3"><span class="tab-number">3</span><span class="tab-title">Utilisateurs</span></button>
+                <button class="mission-tab-btn" data-mission="4"><span class="tab-number">4</span><span class="tab-title">Sécurité</span></button>
+                <button class="mission-tab-btn" data-mission="5"><span class="tab-number">5</span><span class="tab-title">DMZ &amp; Web</span></button>
+            </div>
+            <div class="missions-tabs-content">
+
+                <div class="mission-tab-content active" data-mission="1">
+                    <div class="mission-card-full">
+                        <div class="mission-card-header">
+                            <h3>Segmentation Réseau</h3>
+                            <p style="color:var(--ink-soft); font-size:0.875rem; margin-top:5px;">Architecture logique et plan d'adressage IP</p>
+                        </div>
+                        <div class="mission-card-body">
+                            <div class="mission-section">
+                                <h4>Objectifs</h4>
+                                <ul>
+                                    <li>Définition du plan d'adressage IP sur le réseau <strong>172.22.128.0/20</strong></li>
+                                    <li>Création des VLANs : Employés (180), IT (181), Serveurs (182), DMZ (183)</li>
+                                    <li>Isolation des domaines de diffusion et de collision</li>
+                                </ul>
+                                <div class="timing-block">
+                                    <h5 style="font-size:0.75rem; font-weight:700; margin-bottom:7px; color:var(--ink-mid);"><i class="fa-solid fa-clock-rotate-left"></i> Déroulement (S1)</h5>
+                                    <div class="timing-stats"><span class="timing-badge expected">Prévu : 1 sem.</span><span class="timing-badge ok">Réel : 1 sem. ✓</span></div>
+                                    <p style="font-size:0.84rem; margin-top:7px; color:var(--ink-soft);">Aucun problème rencontré. Conception logique et adressage dans les temps.</p>
+                                </div>
+                            </div>
+                            <div class="mission-section">
+                                <h4>Preuves &amp; Technologies</h4>
+                                <div style="display:flex; flex-wrap:wrap; gap:7px; margin-bottom:16px;"><span class="tech-tag">VLANs</span><span class="tech-tag">VLSM</span></div>
+                                <div style="display:flex; flex-direction:column; gap:8px;">
+                                    <button class="proof-badge" data-type="pdf" data-src="assets/Segmentation_du_reseau.pdf" data-title="Tableau de Segmentation" data-desc="Mon tableau de répartition des adresses IP par sous-réseaux pour le projet GSB."><i class="fa-solid fa-table"></i> Segmentation IP</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mission-tab-content" data-mission="2">
+                    <div class="mission-card-full">
+                        <div class="mission-card-header">
+                            <h3>Infrastructure de Base</h3>
+                            <p style="color:var(--ink-soft); font-size:0.875rem; margin-top:5px;">Couche virtuelle et connectivité</p>
+                        </div>
+                        <div class="mission-card-body">
+                            <div class="mission-section">
+                                <h4>Objectifs</h4>
+                                <ul>
+                                    <li>Installation et configuration d'<strong>Open vSwitch</strong> sur les serveurs Linux</li>
+                                    <li>Création des ponts (bridges) et ports via <code>ovs-vsctl</code></li>
+                                    <li>Tunnels GRE pour l'interconnexion des commutateurs virtuels</li>
+                                </ul>
+                                <div class="timing-block">
+                                    <h5 style="font-size:0.75rem; font-weight:700; margin-bottom:7px; color:var(--ink-mid);"><i class="fa-solid fa-clock-rotate-left"></i> Déroulement (S2–S4)</h5>
+                                    <div class="timing-stats"><span class="timing-badge expected">Prévu : 1.5 sem.</span><span class="timing-badge actual">Réel : 2.5 sem. ⚠</span></div>
+                                    <p style="font-size:0.84rem; margin-top:7px; color:var(--ink-soft);"><strong style="color:var(--ink-mid);">Imprévu :</strong> Courbe d'apprentissage sur Open vSwitch — jamais utilisé auparavant. Documentation et maîtrise en ligne de commande nécessaires.</p>
+                                </div>
+                            </div>
+                            <div class="mission-section">
+                                <h4>Preuves &amp; Technologies</h4>
+                                <div style="display:flex; flex-wrap:wrap; gap:7px; margin-bottom:16px;"><span class="tech-tag">Open vSwitch</span><span class="tech-tag">GRE Tunnels</span><span class="tech-tag">Debian/Linux</span></div>
+                                <div style="display:flex; flex-direction:column; gap:8px;">
+                                    <button class="proof-badge" data-type="pdf" data-src="assets/infrastructure-base.pdf" data-title="Cahier des charges" data-desc="Extrait du cahier des charges technique que j'ai suivi pour mettre en place Open vSwitch."><i class="fa-solid fa-file-pdf"></i> Cahier des charges</button>
+                                    <button class="proof-badge" data-type="image" data-src="assets/Ovs.png" data-title="Config OVS" data-desc="Commandes que j'ai saisies sur chaque commutateur virtuel pour configurer OVS."><i class="fa-solid fa-terminal"></i> Config OVS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mission-tab-content" data-mission="3">
+                    <div class="mission-card-full">
+                        <div class="mission-card-header">
+                            <h3>Utilisateurs &amp; Données</h3>
+                            <p style="color:var(--ink-soft); font-size:0.875rem; margin-top:5px;">Gestion des identités et stockage sécurisé</p>
+                        </div>
+                        <div class="mission-card-body">
+                            <div class="mission-section">
+                                <h4>Objectifs</h4>
+                                <ul>
+                                    <li>Script d'importation massive des utilisateurs (CSV vers AD)</li>
+                                    <li>Serveur de fichiers avec tolérance de panne (<strong>RAID 1</strong>)</li>
+                                    <li>Droits ACL par service : Pharmacie, Production, Commercial</li>
+                                </ul>
+                                <div class="timing-block">
+                                    <h5 style="font-size:0.75rem; font-weight:700; margin-bottom:7px; color:var(--ink-mid);"><i class="fa-solid fa-clock-rotate-left"></i> Déroulement (S4–S6)</h5>
+                                    <div class="timing-stats"><span class="timing-badge expected">Prévu : 1.5 sem.</span><span class="timing-badge actual">Réel : 2 sem. ⚠</span></div>
+                                    <p style="font-size:0.84rem; margin-top:7px; color:var(--ink-soft);"><strong style="color:var(--ink-mid);">Imprévu :</strong> Gestion fine des droits plus fastidieuse. Erreurs de syntaxe dans le script — résolu avec l'aide de l'IA (ChatGPT).</p>
+                                </div>
+                            </div>
+                            <div class="mission-section">
+                                <h4>Preuves &amp; Technologies</h4>
+                                <div style="display:flex; flex-wrap:wrap; gap:7px; margin-bottom:16px;"><span class="tech-tag">Active Directory</span><span class="tech-tag">PowerShell</span><span class="tech-tag">IA / Debug</span></div>
+                                <div style="display:flex; flex-direction:column; gap:8px;">
+                                    <button class="proof-badge" data-type="pdf" data-src="assets/Script_Utilis.pdf" data-title="Script utilisateurs" data-desc="Script PowerShell que j'ai développé pour importer massivement les utilisateurs dans l'AD."><i class="fa-solid fa-users"></i> Script PS</button>
+                                    <button class="proof-badge" data-type="image" data-src="assets/liste-utilisateurs.png" data-title="Liste AD" data-desc="Vue de la console AD confirmant que mon import de masse a bien fonctionné."><i class="fa-solid fa-list"></i> Liste AD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mission-tab-content" data-mission="4">
+                    <div class="mission-card-full">
+                        <div class="mission-card-header">
+                            <h3>Périmètres Réseaux &amp; Sécurité</h3>
+                            <p style="color:var(--ink-soft); font-size:0.875rem; margin-top:5px;">Zones de sécurité, filtrage, monitoring et défense</p>
+                        </div>
+                        <div class="mission-card-body">
+                            <div class="mission-section">
+                                <h4>Objectifs</h4>
+                                <ul>
+                                    <li>Remplacement du routeur temporaire par des pare-feux <strong>OPNSense</strong></li>
+                                    <li>Zones de sécurité : Interne, Externe et DMZ</li>
+                                    <li>Règles de filtrage strictes et configuration du NAT</li>
+                                </ul>
+                                <div class="timing-block">
+                                    <h5 style="font-size:0.75rem; font-weight:700; margin-bottom:7px; color:var(--ink-mid);"><i class="fa-solid fa-clock-rotate-left"></i> Déroulement (S6–S7)</h5>
+                                    <div class="timing-stats"><span class="timing-badge expected">Prévu : 1.5 sem.</span><span class="timing-badge ok">Réel : 1.5 sem. ✓</span></div>
+                                    <p style="font-size:0.84rem; margin-top:7px; color:var(--ink-soft);">Déploiement fluide. Aucune difficulté majeure — tout a fonctionné du premier coup.</p>
+                                </div>
+                            </div>
+                            <div class="mission-section">
+                                <h4>Preuves &amp; Technologies</h4>
+                                <div style="display:flex; flex-wrap:wrap; gap:7px; margin-bottom:16px;"><span class="tech-tag">OPNSense</span><span class="tech-tag">Filtrage L3/L4</span><span class="tech-tag">NAT / PAT</span></div>
+                                <div style="display:flex; flex-direction:column; gap:8px;">
+                                    <button class="proof-badge" data-type="image" data-src="assets/règles.png" data-title="Règles et NAT" data-desc="Règles de filtrage que j'ai configurées sur OPNSense, avec le NAT sur le pare-feu externe."><i class="fa-solid fa-shield-halved"></i> Règles OPNSense</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mission-tab-content" data-mission="5">
+                    <div class="mission-card-full">
+                        <div class="mission-card-header">
+                            <h3>Zone DMZ &amp; Services Web</h3>
+                            <p style="color:var(--ink-soft); font-size:0.875rem; margin-top:5px;">Publication des services vers Internet</p>
+                        </div>
+                        <div class="mission-card-body">
+                            <div class="mission-section">
+                                <h4>Objectifs</h4>
+                                <ul>
+                                    <li>Serveur Web en zone DMZ, Base de données en zone Interne</li>
+                                    <li>DNS "Split-Horizon" (résolution interne vs externe)</li>
+                                    <li>Port Forwarding (NAT) pour l'accès public au site Web</li>
+                                </ul>
+                                <div class="timing-block">
+                                    <h5 style="font-size:0.75rem; font-weight:700; margin-bottom:7px; color:var(--ink-mid);"><i class="fa-solid fa-clock-rotate-left"></i> Déroulement (S8)</h5>
+                                    <div class="timing-stats"><span class="timing-badge expected">Prévu : 1 sem.</span><span class="timing-badge ok">Réel : 1 sem. ✓</span></div>
+                                    <p style="font-size:0.84rem; margin-top:7px; color:var(--ink-soft);">Finalisation dans les temps. DNS Split-Horizon et routage sans accroc pour boucler l'infrastructure.</p>
+                                </div>
+                            </div>
+                            <div class="mission-section">
+                                <h4>Preuves &amp; Technologies</h4>
+                                <div style="display:flex; flex-wrap:wrap; gap:7px; margin-bottom:16px;"><span class="tech-tag">DNS Split-Horizon</span><span class="tech-tag">Port Forwarding</span><span class="tech-tag">Proxmox VE</span></div>
+                                <div style="display:flex; flex-direction:column; gap:8px;">
+                                    <button class="proof-badge" data-type="pdf" data-src="assets/dmz.pdf" data-title="Configuration DMZ" data-desc="Ma documentation technique sur le DNS Split-Horizon avec les tests nslookup que j'ai effectués."><i class="fa-solid fa-globe"></i> Docs DMZ</button>
+                                    <button class="proof-badge" data-type="pdf" data-src="assets/utilisation-proxmox.pdf" data-title="Proxmox" data-desc="Vue d'ensemble de mon hyperviseur Proxmox avec les VMs déployées pour le projet GSB."><i class="fa-solid fa-server"></i> Vue Proxmox</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- ═══════════════════════════════════════════════
+             4 · DÉVELOPPEMENT PROFESSIONNEL
+        ════════════════════════════════════════════════ -->
+        <div class="section-title-row">
+            <div class="card-icon" style="background:#fef3c7; color:#92400e; border-color:#fde68a;"><i class="fa-solid fa-medal"></i></div>
+            <div>
+                <h2>Développement <em style="color:var(--blue);">Professionnel</em></h2>
+                <p>Veille informationnelle, identité professionnelle &amp; certification</p>
+            </div>
+        </div>
+
+        <div class="bento-grid">
+
+            <article class="bento-card">
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <div class="card-icon" style="background:#eff6ff; color:#1c3d8f; border-color:#93c5fd;"><i class="fa-solid fa-certificate"></i></div>
+                    <h3>SecNumAcadémie</h3>
+                </div>
+                <p>Certification délivrée par l'<strong>ANSSI</strong>. Formation en ligne sur la sécurité numérique : menaces, bonnes pratiques, gestion de crise cyber.</p>
+                <div style="margin-top:auto; padding-top:12px; border-top:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+                    <span class="status-pill status-ok"><i class="fa-solid fa-check"></i> Certifié</span>
+                    <button class="proof-badge" data-type="pdf" data-src="assets/Secnum.pdf" data-title="Certificat SecNumAcadémie" data-desc="Mon attestation de réussite à la formation SecNumAcadémie de l'ANSSI.">
+                        <i class="fa-solid fa-file-pdf"></i> Certificat
+                    </button>
+                </div>
+            </article>
+
+            <article class="bento-card">
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <div class="card-icon" style="background:#fdf4ff; color:#7e22ce; border-color:#d8b4fe;"><i class="fa-solid fa-skull-crossbones"></i></div>
+                    <h3>TryHackMe</h3>
+                </div>
+                <p>Plateforme de cybersécurité gamifiée. Parcours structurés : prise en main, exploitation, post-exploitation, défense. Apprentissage par la pratique en environnement simulé.</p>
+                <div style="margin-top:auto; padding-top:12px; border-top:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+                    <span class="status-pill status-info"><i class="fa-solid fa-play"></i> En cours</span>
+                    <a href="https://tryhackme.com" target="_blank" style="color:var(--blue); font-size:0.8rem; font-weight:600; display:inline-flex; align-items:center; gap:5px;"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.72rem;"></i> tryhackme.com</a>
+                </div>
+            </article>
+
+            <article class="bento-card">
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <div class="card-icon" style="background:#fff1f2; color:#7f1d1d; border-color:#fca5a5;"><i class="fa-solid fa-flag"></i></div>
+                    <h3>RootMe — CTF</h3>
+                </div>
+                <p>Plateforme française de Capture The Flag. Challenges pratiques en hacking éthique : web, réseau, cryptographie, forensics et exploitation système.</p>
+                <div style="margin-top:auto; padding-top:12px; border-top:1px solid var(--border); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+                    <span class="status-pill status-info"><i class="fa-solid fa-play"></i> Actif</span>
+                    <a href="https://www.root-me.org" target="_blank" style="color:var(--blue); font-size:0.8rem; font-weight:600; display:inline-flex; align-items:center; gap:5px;"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.72rem;"></i> root-me.org</a>
+                </div>
+            </article>
+
+        </div>
+
+        <hr class="divider">
+
+        <!-- ═══════════════════════════════════════════════
+             5 · VEILLE TECHNOLOGIQUE
+        ════════════════════════════════════════════════ -->
+        <div class="section-title-row">
+            <div class="card-icon primary-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+            <div>
+                <h2>Veille <em style="color:var(--blue);">Technologique</em></h2>
+                <p>Cybersécurité des infrastructures · Sujet de veille SISR</p>
+            </div>
+        </div>
+
+        <div style="background:var(--card); border:1px solid var(--border); border-radius:var(--r-lg); padding:26px; margin-bottom:22px;">
+            <p style="font-size:0.975rem; line-height:1.85; color:var(--ink-soft);">Dans le cadre de mon BTS SIO et de mon alternance à la DGFiP, je mène une veille active sur les menaces et les bonnes pratiques de sécurisation des systèmes d'information. Ce sujet est fondamental dans mon environnement professionnel : la DGFIP gère des données fiscales sensibles et applique des exigences de sécurité strictes. Ma certification SecNumAcadémie structure et enrichit cette démarche au quotidien.</p>
+        </div>
+
+        <div class="veille-grid">
+            <div class="veille-card">
+                <div style="display:flex; align-items:center; gap:9px;">
+                    <div class="card-icon primary-icon" style="width:38px; height:38px; font-size:0.88rem;"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4>Recommandations ANSSI</h4>
+                </div>
+                <p>Suivi des guides de durcissement (Active Directory, Hygiène IT) et analyse du panorama de la cybermenace en France.</p>
+                <a href="https://www.anssi.gouv.fr/" target="_blank" style="color:var(--blue); font-size:0.8rem; font-weight:600; display:inline-flex; align-items:center; gap:5px; margin-top:auto;"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.72rem;"></i> anssi.gouv.fr</a>
+            </div>
+            <div class="veille-card">
+                <div style="display:flex; align-items:center; gap:9px;">
+                    <div class="card-icon accent-icon" style="width:38px; height:38px; font-size:0.88rem;"><i class="fa-solid fa-network-wired"></i></div>
+                    <h4>Sécurité Réseau</h4>
+                </div>
+                <p>Évolution des pare-feux (OPNSense), segmentation VLAN/DMZ, Zero Trust Architecture et protection contre les mouvements latéraux.</p>
+                <p style="font-size:0.78rem; color:var(--ink-faint); margin-top:auto; font-style:italic;">Appliqué directement dans GSB</p>
+            </div>
+            <div class="veille-card">
+                <div style="display:flex; align-items:center; gap:9px;">
+                    <div class="card-icon" style="background:#fef3c7; color:#92400e; border-color:#fde68a; width:38px; height:38px; font-size:0.88rem;"><i class="fa-solid fa-rss"></i></div>
+                    <h4>Sources d'information</h4>
+                </div>
+                <p>CERT-FR, flux RSS spécialisés (Feedly), forums techniques (r/sysadmin, r/netsec) et podcasts de cybersécurité pour rester à jour sur les menaces.</p>
+                <a href="https://www.cert.ssi.gouv.fr/" target="_blank" style="color:var(--blue); font-size:0.8rem; font-weight:600; display:inline-flex; align-items:center; gap:5px; margin-top:auto;"><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.72rem;"></i> cert.ssi.gouv.fr</a>
+            </div>
+        </div>
+
+        <div style="background:var(--blue-pale); border:1px solid rgba(28,61,143,.15); border-radius:var(--r-lg); padding:24px;">
+            <p style="font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--blue); margin-bottom:16px;">Référentiels &amp; Frameworks suivis</p>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:16px;">
+                <div style="border-left:2px solid var(--blue); padding-left:14px;">
+                    <p style="font-weight:700; font-size:0.88rem; color:var(--ink-mid); margin-bottom:4px;">MITRE ATT&amp;CK</p>
+                    <p style="font-size:0.82rem; color:var(--ink-soft);">Base de connaissances sur les techniques d'attaque réelles, fondée sur observations empiriques.</p>
+                </div>
+                <div style="border-left:2px solid var(--blue); padding-left:14px;">
+                    <p style="font-weight:700; font-size:0.88rem; color:var(--ink-mid); margin-bottom:4px;">OWASP Top 10</p>
+                    <p style="font-size:0.82rem; color:var(--ink-soft);">Vulnérabilités web les plus critiques. Référence pour le développement sécurisé.</p>
+                </div>
+                <div style="border-left:2px solid var(--blue); padding-left:14px;">
+                    <p style="font-weight:700; font-size:0.88rem; color:var(--ink-mid); margin-bottom:4px;">Ransomware &amp; Incident Response</p>
+                    <p style="font-size:0.82rem; color:var(--ink-soft);">Tendances des rançongiciels, plans de réponse aux incidents et stratégies de récupération.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Oskar Doutreligne — BTS SIO SISR</p>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/oskar-doutreligne-08216b2b4/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Oskar59" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="proof-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-display-area">
+                <img id="modal-img" src="" alt="Preuve" style="display:none;">
+                <iframe id="modal-pdf" src="" style="display:none;"></iframe>
+            </div>
+            <div class="modal-info-area">
+                <div id="modal-caption"></div>
+                <p id="modal-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
